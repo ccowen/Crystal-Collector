@@ -7,30 +7,73 @@ body {
     background-image: url('../images/background.png');
 }
 
-#instructions {
-	font-family: 'Raleway', sans-serif; 
+header {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0px;
 }
 
 #title {
 	font-family: 'Abril Fatface', cursive;
 	letter-spacing: 1.2px;
 	text-align: center;
+	color: #31184D;
+	font-size: 60px;
 }
 
-.container {
-	width: 960px;
-	margin: 0 auto;
+#instructions {
+	font-family: 'Raleway', sans-serif; 
 }
 
 .fixedButton1,
-.fixedButton2 {
+.fixedButton2,
+.fixedButton3,
+.fixedButton4 {
 	float: left;
 	position: fixed;
 	left: 0;
-	width: 100px;
-	height: 75px;
+}
+
+#instructions {
+	columns: 2;
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	color: rgb(60, 60, 60);
+}
+
+.fixedButton1 {
+	top: 150px;
+	background-color: #7477A1;
 }
 
 .fixedButton2 {
-	top: 180px;
+	top: 200px;
+	background-color: #7477A1;
 }
+
+.fixedButton3 {
+	top: 250px;
+	background-color: #31184D;
+
+}
+
+.fixedButton4 {
+	top: 300px;
+}
+
+.crystal-image {
+      width: 200px;
+      height: 200px;
+    }
+
+.crystal-image:hover {
+    background-color: rgba(116, 119, 161, .2);
+}
+
+

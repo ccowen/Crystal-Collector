@@ -8,9 +8,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
 
 	<!-- Bootstrap !-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 	<!-- your css !-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- link to the jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- link to the my javascript -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 
@@ -20,35 +27,30 @@
 		<h1 id="title">Crystal Collector</h1>
 	</header>
 
-	<button class="fixedButton1">wins</button>
-	<button class="fixedButton2">loses</button>
+	<button class="btn btn-dark fixedButton1">Target Number: <span id="number-to-guess"></span></button>
+	<button class="btn btn-dark fixedButton2">Your Score: <span id="score"></span></button>
+	<button class="btn btn-dark fixedButton3">Wins: <span id="wins"></span></button>
+	<button class="btn btn-light fixedButton4">Loses: <span id="loses"></span></button>
 
 	<div class="container">
 
-		<div>
-			<p>The four images</p>
-		</div>
-
-		<div>
-
-			<div id="randomNumber">
-				random number
-			</div>
-
-			<div id="totalpoints">
-				total points
-			</div>
-
+		<div id="crystals">
+			
 		</div>
 
 		<div>
 			<p id="instructions">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+				You will be given a target number at the start of the game.
+				<br><br>
+				There are four crystals above. When you click on a crystal, you add a specificied number of points to your total score.
+				<br><br>
+				You win the game by matching your total score to the target number. You lose the game if yout total score exceeds the target number.
+				<br><br>
+				When the game restarts, the target score and the values of the crystals change.
 			</p>
 		</div>
 
 	</div>
-
 
 </body>
 
