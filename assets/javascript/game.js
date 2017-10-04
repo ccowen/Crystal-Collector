@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+  var audioElement = document.createElement("audio");
+
+  audioElement.setAttribute("src", "assets/music/loop.mp3");
+
+  $(".theme-button").on("click", function() {
+  audioElement.play();
+  });
+
+  $(".pause-button").on("click", function() {
+  audioElement.pause();
+  });
+
   function reset() {
 
     targetNumber = Math.floor(Math.random() * 109) + 12;
@@ -46,9 +58,12 @@ $(document).ready(function() {
     crystalValue = parseInt(crystalValue);
     counter += crystalValue;
 
+    document.getElementById('alert').play();
     alert("New score: " + counter);
 
     if (counter === targetNumber) {
+      var winSnd = new Audio('assets/music/wins.mp3');
+      winSnd.play();
       alert("You win!");
       wins++;
       $("#wins").text(wins);

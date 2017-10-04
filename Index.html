@@ -5,7 +5,9 @@
 	<title>Crystal Collector</title>
 
 	<!-- google fonts 'Abril Fatface' and 'Raleway' !-->
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 	<!-- Bootstrap !-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -23,14 +25,21 @@
 
 <body>
 
+	<audio id="wins" src="assets/music/wins.mp3" preload="auto"></audio>
+	<audio id="alert" src="assets/music/alert.mp3" preload="auto"></audio>
+
 	<header>
 		<h1 id="title">Crystal Collector</h1>
 	</header>
 
-	<button class="btn btn-dark fixedButton1">Target Number: <span id="number-to-guess"></span></button>
-	<button class="btn btn-dark fixedButton2">Your Score: <span id="score"></span></button>
-	<button class="btn btn-dark fixedButton3">Wins: <span id="wins"></span></button>
-	<button class="btn btn-light fixedButton4">Loses: <span id="loses"></span></button>
+	<button class="btn btn-dark fixedButton1 disabled">Target Number: <span id="number-to-guess"></span></button>
+	<button class="btn btn-dark fixedButton2 disabled">Your Score: <span id="score"></span></button>
+	<button class="btn btn-dark fixedButton3 disabled">Wins: <span id="wins"></span></button>
+	<button class="btn btn-light fixedButton4 disabled">Losses: <span id="loses"></span></button>
+
+	<button class="btn btn-light btn-xs theme-button fixedButton5"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
+	<button class="btn btn-light btn-xs pause-button fixedButton6"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+
 
 	<div class="container">
 

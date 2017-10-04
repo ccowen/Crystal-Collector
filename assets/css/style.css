@@ -19,11 +19,11 @@ header {
 }
 
 #title {
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Lobster', cursive;;
 	letter-spacing: 1.2px;
 	text-align: center;
 	color: #31184D;
-	font-size: 60px;
+	font-size: 72px;
 }
 
 #instructions {
@@ -33,7 +33,9 @@ header {
 .fixedButton1,
 .fixedButton2,
 .fixedButton3,
-.fixedButton4 {
+.fixedButton4,
+.fixedButton5,
+.fixedButton6 {
 	float: left;
 	position: fixed;
 	left: 0;
@@ -49,22 +51,27 @@ header {
 
 .fixedButton1 {
 	top: 150px;
-	background-color: #7477A1;
 }
 
 .fixedButton2 {
 	top: 200px;
-	background-color: #7477A1;
 }
 
 .fixedButton3 {
 	top: 250px;
-	background-color: #31184D;
-
 }
 
 .fixedButton4 {
 	top: 300px;
+}
+
+.fixedButton5 {
+	top: 350px;
+	background-color: #829AF7;
+}
+
+.fixedButton6 {
+	top: 400px;
 }
 
 .crystal-image {
