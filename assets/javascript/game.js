@@ -58,20 +58,18 @@ $(document).ready(function() {
     crystalValue = parseInt(crystalValue);
     counter += crystalValue;
 
-    document.getElementById('alert').play();
-    alert("New score: " + counter);
+    var alertSnd = new Audio('assets/music/alert.mp3');
+    alertSnd.play();
 
     if (counter === targetNumber) {
-      var winSnd = new Audio('assets/music/wins.mp3');
+      var winSnd = new Audio('assets/music/win.mp3');
       winSnd.play();
-      alert("You win!");
       wins++;
       $("#wins").text(wins);
       reset();
     }
 
     else if (counter >= targetNumber) {
-      alert("You lose!!");
       loses++;
       $("#loses").text(loses);
       reset();
