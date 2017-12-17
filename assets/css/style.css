@@ -3,12 +3,12 @@ font-family: 'Abril Fatface', cursive;
 font-family: 'Raleway', sans-serif; 
 */
 
+/*--------------------- global --------------------*/
 body {
     background-image: url('../images/background.png');
 }
 
 header {
-	padding-top: 20px;
 	padding-bottom: 30px;
 }
 
@@ -16,13 +16,16 @@ header {
 	width: 800px;
 	margin: 0 auto;
 	padding: 0px;
+	background-color: rgba(256, 256, 256, .5);
+	padding: 10px 0px 100px 0px;
+	margin-top: 10px;
 }
 
 #title {
 	font-family: 'Lobster', cursive;;
 	letter-spacing: 1.2px;
 	text-align: center;
-	color: #31184D;
+	color: black;
 	font-size: 72px;
 }
 
@@ -30,6 +33,15 @@ header {
 	font-family: 'Raleway', sans-serif; 
 }
 
+#instructions {
+	columns: 2;
+	padding-top: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+	color: rgb(60, 60, 60);
+}
+
+/* -------------------- left buttons --------------- */
 .fixedButton1,
 .fixedButton2,
 .fixedButton3,
@@ -39,14 +51,9 @@ header {
 	float: left;
 	position: fixed;
 	left: 0;
-}
-
-#instructions {
-	columns: 2;
-	padding-top: 50px;
-	padding-left: 100px;
-	padding-right: 100px;
-	color: rgb(60, 60, 60);
+	width: 250px;
+	text-align: left;
+	background-color: #2BBBAD;
 }
 
 .fixedButton1 {
@@ -72,17 +79,28 @@ header {
 
 .fixedButton6 {
 	top: 400px;
+	background-color: lightcoral;
+}
+
+i {
+	padding-right: 10px;
+}
+
+/* --------------------- crystal images -------------- */
+#crystals {
+	padding: 0px 12px 0px 12px;
 }
 
 .crystal-image {
-      width: 200px;
-      height: 200px;
-    }
-
-.crystal-image:hover {
-    background-color: rgba(116, 119, 161, .2);
+	width: 194px;
+	height: 194px;
 }
 
+.crystal-image:hover {
+    background-color: rgba(116, 119, 161, .5);
+}
+
+/*link*/
 credit {
 	font-size: 8px;
 }

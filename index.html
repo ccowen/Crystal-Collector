@@ -9,10 +9,16 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-	<!-- Bootstrap !-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- font awesome -->
+	<script src="https://use.fontawesome.com/2d05a3f6a5.js"></script>
 
-	<!-- your css !-->
+	<!-- Materialize Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<!-- Materialize Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+	<!-- my css !-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<!-- link to the jQuery Library -->
@@ -25,20 +31,23 @@
 
 <body>
 
-	<header>
-		<h1 id="title">Crystal Collector</h1>
-	</header>
+	<a class="waves-effect waves-light btn disabled fixedButton1"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Target Number: <span id="number-to-guess"></span></a>
 
-	<button class="btn btn-dark fixedButton1 disabled">Target Number: <span id="number-to-guess"></span></button>
-	<button class="btn btn-dark fixedButton2 disabled">Your Score: <span id="score"></span></button>
-	<button class="btn btn-dark fixedButton3 disabled">Wins: <span id="wins"></span></button>
-	<button class="btn btn-light fixedButton4 disabled">Losses: <span id="loses"></span></button>
+	<a class="waves-effect waves-light btn disabled fixedButton2"><i class="fa fa-trophy" aria-hidden="true"></i>Your Score: <span id="score"></span></a>
 
-	<button class="btn btn-light btn-xs theme-button fixedButton5"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
-	<button class="btn btn-light btn-xs pause-button fixedButton6"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+	<a class="waves-effect waves-light btn disabled fixedButton3"><i class="fa fa-star" aria-hidden="true"></i>Wins: <span id="wins"></span></a>
 
+	<a class="waves-effect waves-light btn disabled fixedButton4"><i class="fa fa-star-o" aria-hidden="true"></i>Losses: <span id="loses"></span></a>
+
+	<a class="waves-effect waves-light btn fixedButton5 theme-button"><i class="fa fa-play-circle" aria-hidden="true"></i><span class="glyphicon glyphicon-music"></span> Play Theme!</a>
+
+	<a class="waves-effect waves-light btn fixedButton6 pause-button"><i class="fa fa-pause-circle" aria-hidden="true"></i><span class="glyphicon glyphicon-pause"></span> Pause Song</a>
 
 	<div class="container">
+		
+		<header>
+			<h1 id="title">Crystal Collector</h1>
+		</header>
 
 		<div id="crystals">
 			
